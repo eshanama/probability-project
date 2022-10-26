@@ -1,7 +1,8 @@
 # Jennibelle Khuu (kuf3yd) and Esha Nama (esn4wx)
 
-# import math library
+# import math libraries
 import math
+import numpy as np
 
 # Section 1: Random Number Generator ---------------------------------------------------------------------
 
@@ -37,26 +38,28 @@ print("u_53: " + str(random_num(53)) + "\n")
 # Section 2: Random Variable Generator -------------------------------------------------------------------
 # 2a: Discrete Random Variable
 
-def xi_random_variable(t):
+def xi_discrete_rv(t):
     return 1 - pow(math.e, (-1/12)*t)
 
-def random_variable_generator(u):
+def discrete_rv_generator(u):
     Fx = 0
     x = 1
     while Fx < u:
-        Fx = xi_random_variable(x)
+        Fx = xi_discrete_rv(x)
         x+=1
     return x-1
 
 print(random_num(3))
 print("")
 
-print(xi_random_variable(64))
-print(xi_random_variable(65))
-print(xi_random_variable(66))
+print(xi_discrete_rv(64))
+print(xi_discrete_rv(65))
+print(xi_discrete_rv(66))
 
 print("")
-print(random_variable_generator(random_num(3)))
+print(discrete_rv_generator(random_num(3)))
 
 # 2b: Continuous Random Variable
-
+def xi_continuous_rv(u):
+    Ft = -12 * np.log(1-u)
+    return Ft
