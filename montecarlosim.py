@@ -75,5 +75,16 @@ def simulation(run_num):
                     return w
         num_calls += 1
 
-print(random_num(1))
-print(simulation(1))
+# print(random_num(1))
+# print(simulation(1))
+
+def run_simulation(runs):
+    # num_runs = runs - 1
+    wait_times = []
+
+    for i in range (1, runs):
+        wait_times.append(simulation(i))
+
+    return wait_times
+
+print(run_simulation(2))
