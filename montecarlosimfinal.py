@@ -167,6 +167,51 @@ def collect_data(n):
        print("W > W6 ({}): {}".format(110, w6 / 1000))
        print("W > W7 ({}): {}".format(127, w7 / 1000))
 
+       w25 = less_than(w_times, 25)
+       w35 = less_than(w_times, 35)
+       w45 = less_than(w_times, 45)
+       w55 = less_than(w_times, 55)
+       w65 = less_than(w_times, 65)
+       w75 = less_than(w_times, 75)
+
+       w80 = less_than(w_times, 80)
+       w85 = less_than(w_times, 85)
+       w90 = less_than(w_times, 90)
+       w95 = less_than(w_times, 95)
+       w100 = less_than(w_times, 100)
+       w105 = less_than(w_times, 105)
+       w110 = less_than(w_times, 110)
+       w115 = less_than(w_times, 115)
+       w120 = less_than(w_times, 120)
+
+       w125 = less_than(w_times, 125)
+       w130 = less_than(w_times, 130)
+       w135 = less_than(w_times, 135)
+       w140 = less_than(w_times, 140)
+
+
+       print("W <= 25: {}".format(w25 / 1000))
+       print("W <= 35: {}".format(w35 / 1000))
+       print("W <= 45: {}".format(w45 / 1000))
+       print("W <= 55: {}".format(w55 / 1000))
+       print("W <= 65: {}".format(w65 / 1000))
+       print("W <= 75: {}".format(w75 / 1000) + "\n")
+
+       print("{}".format(w80 / 1000))
+       print("{}".format(w85 / 1000))
+       print("{}".format(w90 / 1000))
+       print("{}".format(w95 / 1000))
+       print("{}".format(w100 / 1000))
+       print("{}".format(w105 / 1000))
+       print("{}".format(w110 / 1000))
+       print("{}".format(w115 / 1000))
+       print("{}".format(w120 / 1000)+"\n")
+
+       print("{}".format(w125 / 1000))
+       print("{}".format(w130 / 1000))
+       print("{}".format(w135 / 1000))
+       print("{}".format(w140 / 1000))
+
        print(w_times)
 
 collect_data(1000)
